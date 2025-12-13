@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Score Report</title>
+</head>
+<body>
+    <h1>User Report for {{ user.capitalize() }}</h1>
+    
+    <p>Your latest score is: <strong>{{ current_score }}</strong></p>
+
+    {% if current_score > 80 %}
+        <p style="color: green;">Congratulations! Excellent performance.</p>
+    {% else %}
+        <p style="color: orange;">Good effort. Keep practicing!</p>
+    {% endif %}
+
+    <p>Return to <a href="/">Home</a></p>
+</body>
+</html>
